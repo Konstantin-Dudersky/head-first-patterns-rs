@@ -1,3 +1,3 @@
 [workspace]
-members = ["./chapter01_strategy"]
+members = ["./chapter01_strategy", "./chapter02_observer"]
 resolver = "2"
