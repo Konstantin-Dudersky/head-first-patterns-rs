@@ -1,9 +1,21 @@
-pub type FlyBehavior = fn() -> ();
+// pub type FlyBehavior = fn() -> ();
 
-pub fn FlyWithWings() -> () {
-    println!("I'm flying!");
+// pub fn fly_with_wings() -> () {
+//     println!("I'm flying!");
+// }
+
+// pub fn fly_no_way() -> () {
+//     println!("I can't fly!");
+// }
+
+pub trait FlyBehavior {
+    fn fly();
 }
 
-pub fn FlyNoWay() -> () {
-    println!("I can't fly!");
+pub struct FlyWithWIngs;
+
+impl FlyBehavior for FlyWithWIngs {
+    fn fly() {
+        todo!()
+    }
 }
